@@ -106,7 +106,7 @@ h1 {
   font-family: var(--sans);
   font-weight: 800;
   font-stretch: 118%;
-  font-size: clamp(2rem, 7.6vw, 4.6rem);
+  font-size: clamp(2rem, 6vw, 3.8rem);
   line-height: 0.98;
   letter-spacing: -0.015em;
   color: var(--silk);
@@ -262,9 +262,9 @@ h1 {
 }
 .contact-links li + li { margin-top: 6px; }
 .contact-links a {
-  font-family: var(--sans);
+  font-family: inherit;
+  font-size: 1em;
   font-weight: 600;
-  font-size: clamp(1.3rem, 1rem + 1.4vw, 1.9rem);
   overflow-wrap: anywhere;
 }
 
@@ -277,3 +277,8 @@ h1 {
   color: var(--silk-muted);
 }
 .site-footer p { margin: 0; }
+
+
+.stack p + p {
+  margin-top: 1.4em;
+}
