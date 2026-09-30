@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navneet Kalatheeswaran | ECE Student</title>
+  <meta name="description" content="Electrical and computer engineering student at Ohio State interested in embedded systems, hardware security, and semiconductors.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>Hello world! This is my personal site hosted on GitHub Pages.</p>
+
+  <header class="site-header">
+    <a class="brand" href="#top">NK</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <p class="eyebrow">Electrical &amp; Computer Engineering, The Ohio State University</p>
+      <h1>Navneet Kalatheeswaran</h1>
+      <p class="lead">
+        I build hardware and embedded systems. Right now I'm learning PCB design
+        and working toward a career in embedded systems, hardware security, and semiconductors.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="resume.pdf">Resume</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm an ECE and Integrated Business &amp; Engineering student at Ohio State.
+        I've done hardware work through the MIT Beaver Works Summer Institute
+        (Microelectronics and Hardware Development), founded a cybersecurity club
+        in high school, and teach coding and math to younger students.
+      </p>
+      <p>
+        I'm most interested in the layer where hardware meets software: microcontrollers,
+        board design, and making sure the whole stack is secure.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Custom PCB Dev Board</h3>
+            <span class="tag status">In progress</span>
+          </div>
+          <p>
+            A microcontroller board designed from scratch in KiCad, covering schematic
+            capture, layout, fabrication, and bring-up. Writeup and design files coming
+            as the project develops.
+          </p>
+          <ul class="tags">
+            <li>KiCad</li>
+            <li>PCB design</li>
+            <li>Embedded</li>
+          </ul>
+          <a class="card-link" href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME">View on GitHub</a>
+        </article>
+
+        <!--
+        Copy this block for each new project:
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Project name</h3>
+          </div>
+          <p>Two or three sentences: what it is, what you built, what you learned.</p>
+          <ul class="tags">
+            <li>Tool</li>
+            <li>Tool</li>
+          </ul>
+          <a class="card-link" href="https://github.com/YOUR_GITHUB_USERNAME/REPO">View on GitHub</a>
+        </article>
+        -->
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to talk hardware, research, or internships? Reach out.</p>
+      <ul class="links">
+        <li><a href="mailto:YOUR_EMAIL">Email</a></li>
+        <li><a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Navneet Kalatheeswaran</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
