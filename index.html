@@ -3,104 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navneet Kalatheeswaran | ECE Student</title>
-  <meta name="description" content="Electrical and computer engineering student at Ohio State interested in embedded systems, hardware security, and semiconductors.">
+  <title>Navneet Kalatheeswaran</title>
+  <meta name="description" content="Electrical and computer engineering student at Ohio State. Learning board design and firmware, aiming at embedded systems, hardware security, and semiconductors.">
+  <meta name="theme-color" content="#1a0f2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <a class="brand" href="#top">NK</a>
-    <nav>
-      <a href="#about">About</a>
+  <header class="wrap site-header">
+    <a class="brand" href="#top">Navneet K.</a>
+    <nav aria-label="Primary">
       <a href="#projects">Projects</a>
+      <a href="#background">Background</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="main">
 
-    <section class="hero">
-      <p class="eyebrow">Electrical &amp; Computer Engineering, The Ohio State University</p>
-      <h1>Navneet Kalatheeswaran</h1>
+    <section class="wrap hero" id="top">
+      <h1>Navneet<br>Kalatheeswaran</h1>
       <p class="lead">
-        I build hardware and embedded systems. Right now I'm learning PCB design
-        and working toward a career in embedded systems, hardware security, and semiconductors.
+        Electrical and computer engineering at Ohio State. I'm learning to design
+        boards and the firmware that runs on them, with an eye on embedded systems,
+        hardware security, and semiconductors.
       </p>
       <div class="actions">
-        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn solid" href="#projects">See projects</a>
         <a class="btn" href="resume.pdf">Resume</a>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I'm an ECE and Integrated Business &amp; Engineering student at Ohio State.
-        I've done hardware work through the MIT Beaver Works Summer Institute
-        (Microelectronics and Hardware Development), founded a cybersecurity club
-        in high school, and teach coding and math to younger students.
-      </p>
-      <p>
-        I'm most interested in the layer where hardware meets software: microcontrollers,
-        board design, and making sure the whole stack is secure.
-      </p>
-    </section>
+    <!-- Two buses of traces routed at 45 degrees into a 6-pin header, drawn once on load -->
+    <div class="board" aria-hidden="true">
+      <svg viewBox="0 0 1200 260" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <g class="traces">
+          <path class="trace" pathLength="1" style="--i:0" d="M0 30 h280 l70 70 h380 l40 40 h290"/>
+          <path class="trace" pathLength="1" style="--i:1" d="M0 48 h280 l70 70 h380 l40 40 h290"/>
+          <path class="trace" pathLength="1" style="--i:2" d="M0 66 h280 l70 70 h380 l40 40 h290"/>
+          <path class="trace" pathLength="1" style="--i:3" d="M0 84 h280 l70 70 h380 l40 40 h290"/>
+          <path class="trace" pathLength="1" style="--i:4" d="M0 102 h280 l70 70 h380 l40 40 h290"/>
+          <path class="trace" pathLength="1" style="--i:5" d="M0 120 h280 l70 70 h380 l40 40 h290"/>
+        </g>
+        <g class="connector">
+          <rect x="1036" y="124" width="48" height="122" rx="4"/>
+          <polygon points="1026,132 1026,148 1012,140"/>
+        </g>
+        <g class="pads">
+          <circle class="ring" cx="1060" cy="140" r="7"/><circle class="hole" cx="1060" cy="140" r="2.6"/>
+          <circle class="ring" cx="1060" cy="158" r="7"/><circle class="hole" cx="1060" cy="158" r="2.6"/>
+          <circle class="ring" cx="1060" cy="176" r="7"/><circle class="hole" cx="1060" cy="176" r="2.6"/>
+          <circle class="ring" cx="1060" cy="194" r="7"/><circle class="hole" cx="1060" cy="194" r="2.6"/>
+          <circle class="ring" cx="1060" cy="212" r="7"/><circle class="hole" cx="1060" cy="212" r="2.6"/>
+          <circle class="ring" cx="1060" cy="230" r="7"/><circle class="hole" cx="1060" cy="230" r="2.6"/>
+        </g>
+      </svg>
+    </div>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
+    <div class="wrap">
 
-        <article class="card">
-          <div class="card-top">
-            <h3>Custom PCB Dev Board</h3>
-            <span class="tag status">In progress</span>
-          </div>
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="stack">
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Custom PCB dev board</h3>
+              <span class="status">In progress</span>
+            </div>
+            <p>
+              A microcontroller board designed from scratch in KiCad: schematic, layout,
+              fabrication, and bring-up. I'll post the design files here, along with what
+              went wrong on each revision and how I fixed it.
+            </p>
+            <p class="meta">KiCad, schematic capture, PCB layout, firmware bring-up</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME">View repository</a>
+          </article>
+
+          <!--
+          Copy this block for each new project:
+
+          <article class="project">
+            <div class="project-head">
+              <h3>Project name</h3>
+            </div>
+            <p>Two or three sentences: what it is, what you built, what you learned.</p>
+            <p class="meta">Tools, parts, languages</p>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/REPO">View repository</a>
+          </article>
+          -->
+
+        </div>
+      </section>
+
+      <section class="section" id="background">
+        <h2>Background</h2>
+        <div class="stack">
           <p>
-            A microcontroller board designed from scratch in KiCad, covering schematic
-            capture, layout, fabrication, and bring-up. Writeup and design files coming
-            as the project develops.
+            I study electrical and computer engineering at Ohio State, with a second
+            major in Integrated Business &amp; Engineering. I'm most interested in the
+            layer where hardware meets firmware: board design, microcontrollers, and
+            making sure the whole stack can be trusted.
           </p>
-          <ul class="tags">
-            <li>KiCad</li>
-            <li>PCB design</li>
-            <li>Embedded</li>
+          <dl class="facts">
+            <div>
+              <dt>MIT Beaver Works Summer Institute</dt>
+              <dd>Microelectronics and Hardware Development track.</dd>
+            </div>
+            <div>
+              <dt>CyBR Hacks</dt>
+              <dd>Founded the cybersecurity club and served as its president.</dd>
+            </div>
+            <div>
+              <dt>Teaching</dt>
+              <dd>I teach math competitions, Scratch, and computational thinking to elementary students.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <div class="stack">
+          <p>Open to conversations about hardware, research, and internships.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></li>
+            <li><a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></li>
           </ul>
-          <a class="card-link" href="https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME">View on GitHub</a>
-        </article>
+        </div>
+      </section>
 
-        <!--
-        Copy this block for each new project:
-
-        <article class="card">
-          <div class="card-top">
-            <h3>Project name</h3>
-          </div>
-          <p>Two or three sentences: what it is, what you built, what you learned.</p>
-          <ul class="tags">
-            <li>Tool</li>
-            <li>Tool</li>
-          </ul>
-          <a class="card-link" href="https://github.com/YOUR_GITHUB_USERNAME/REPO">View on GitHub</a>
-        </article>
-        -->
-
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to talk hardware, research, or internships? Reach out.</p>
-      <ul class="links">
-        <li><a href="mailto:YOUR_EMAIL">Email</a></li>
-        <li><a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a></li>
-      </ul>
-    </section>
-
+    </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="wrap site-footer">
     <p>&copy; <span id="year"></span> Navneet Kalatheeswaran</p>
   </footer>
 
